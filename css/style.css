@@ -1,5 +1,7 @@
 :root {
-  --title-text-color: #212121;
+  --main-font: 'Roboto';
+  --secondary-font: 'Raleway';
+  --main-text-color: #212121;
   --primyry-text-color: #757575;
   --secondary-color: #2196f3;
   --bacnd-color: #ffffff;
@@ -8,17 +10,20 @@
   --dysine-color: #f5f4fa;
   --adress-color: rgba(255, 255, 255, 0.6);
 }
-/* FONTS
-font-family: 'Montserrat', sans-serif;
-font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif; */
 
 /* BODY */
 body {
-  color: #212121;
+  color: var(--main-text-color);
+  font-family: var(--main-font);
+  font-weight: 400;
 }
-.logo {
-  font-family: Raleway;
+.list {
+  list-style-type: none;
+}
+/* Стили Шапки */
+
+.logo.headers-logo {
+  font-family: var(--secondary-font);
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
@@ -26,6 +31,82 @@ body {
   text-decoration: none;
   color: var(--logo-color);
 }
-.logo-style {
+.web {
   color: var(--secondary-color);
+}
+.navig-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+.navig-link:hover {
+  color: var(--secondary-color);
+}
+.navig-link:focus {
+  color: var(--secondary-color);
+}
+.headers-contacts {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  font-size: 14px;
+  color: var(--primyry-text-color);
+  text-decoration: none;
+}
+.headers-contacts:hover {
+  color: var(--secondary-color);
+}
+.headers-contacts:focus {
+  color: var(--secondary-color);
+}
+/* Герой */
+
+.hero {
+  background-color: var(--hero-foot-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bacnd-color);
+}
+.main-butn {
+  cursor: pointer;
+  background: var(--secondary-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.main-butn-text {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--bacnd-color);
+}
+/* Наши плюсы */
+.services-title {
+  display: none;
+}
+.services-titles {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.services-description {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--primyry-text-color);
 }
