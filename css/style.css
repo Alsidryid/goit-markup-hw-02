@@ -15,7 +15,7 @@
 /* BODY */
 body {
   color: var(--main-text-color);
-  font-family: var(--main-font);
+  font-family: var(--main-font), sans-serif;
   font-weight: 400;
 }
 .list {
@@ -28,9 +28,9 @@ body {
 
 .logo {
   font-family: var(--secondary-font);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
 }
 .headers-logo {
@@ -42,7 +42,7 @@ body {
 .navig-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   text-decoration: none;
@@ -54,9 +54,8 @@ body {
   color: var(--secondary-color);
 }
 .headers-contacts {
-  font-style: normal;
   font-weight: 500;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   font-size: 14px;
   color: var(--primyry-text-color);
@@ -76,7 +75,7 @@ body {
 .hero-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -90,38 +89,37 @@ body {
   border-radius: 4px;
   border: none;
   /* for text button */
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--bacnd-color);
 }
-.main-butn-text {
-}
+
 /* Наши плюсы */
 .services-title {
   display: none;
 }
 .services-titles {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .services-description {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--primyry-text-color);
 }
 /* Чем мы занимаемся */
 .our-job-title {
-  font-weight: bold;
-  line-height: 42px;
+  font-weight: 700;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   font-size: 36px;
@@ -131,8 +129,8 @@ body {
   background-color: var(--dysine-color);
 }
 .our-team-title {
-  font-weight: bold;
-  line-height: 42px;
+  font-weight: 700;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   font-size: 36px;
@@ -143,14 +141,14 @@ body {
 }
 .worker-title {
   font-weight: 500;
-  line-height: 19px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   font-size: 16px;
 }
 .position {
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primyry-text-color);
@@ -165,14 +163,26 @@ body {
 .fact-adres {
   font-size: 14px;
   letter-spacing: 0.03em;
-  line-height: 24px;
+  line-height: 1.7;
   color: var(--bacnd-color);
 }
 .second-adres {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--adress-color);
+}
+.fact-adres:hover {
+  color: var(--secondary-color);
+}
+.second-adres:hover {
+  color: var(--secondary-color);
+}
+.fact-adres:focus {
+  color: var(--secondary-color);
+}
+.second-adres:focus {
+  color: var(--secondary-color);
 }
 /* Категории */
 .categories-title {
@@ -186,7 +196,7 @@ body {
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -205,22 +215,19 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-.secondary-butns-text {
-}
 /* Селекторы категорий */
 .categorie {
   border: 1px solid var(--categorie-color);
   box-sizing: border-box;
 }
 .categories-titles {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
 }
 .categories-description {
-  font-weight: normal;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--primyry-text-color);
 }
